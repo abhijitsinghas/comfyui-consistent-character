@@ -1,3 +1,38 @@
+# 🔖 1.5.0 (2025-05-11)
+
+## Docker Image
+
+```bash
+# Latest version
+docker pull ghcr.io/joyandmighty/consistent-character:1.5.0
+
+# Or use latest tag
+docker pull ghcr.io/joyandmighty/consistent-character:latest
+```
+
+## Changes
+
+### 🚀 Features
+
+* Added custom nodes and models ([d2c8f4d](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/d2c8f4dbe7ac3aa8bdedee5c38e70fe63e85a4a3))
+* Update UltraSharp upscaler model download to .safetensors format ([f5ae910](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/f5ae910ef45d5af132735f2c17af5ae81c3d59be))
+
+### 🐛 Bug Fixes
+
+* Improve Python symlink management in Dockerfile ([6c0925e](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/6c0925e7561d25fac825634be213c1fc5a47e850))
+* Resolve Python apt_pkg module linking issue ([e972816](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/e9728162c021fb565688c6c51ae70fd24af28c9a))
+
+### 🔧 Maintenance
+
+* Remove uv tool installation from Dockerfile ([1f8663d](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/1f8663ddee0467c05db3d58025b37e1b7bfbbc9a))
+* Update base Docker image and PyTorch CUDA configuration ([8c05c17](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/8c05c176ce626b90e17bc2f0473903367a9f3296))
+* Update GitHub Actions runner to use LargerRunner ([d098a71](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/d098a71cd43f0ef1af35e5245e699d7f29128a2f))
+* Update repository references from imamik to joyandmighty ([327bc9e](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/327bc9ef5308914bcdbf96e7b8e443f540a5f488))
+
+### ♻️ Refactor
+
+* Streamline Dockerfile for improved efficiency ([16db8e0](https://github.com/abhijitsinghas/comfyui-consistent-character/commit/16db8e029bb2abe4419c6180155622b596965454))
+
 # 🔖 1.4.0 (2025-02-05)
 
 ## Docker Image
