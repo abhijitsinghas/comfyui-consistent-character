@@ -23,8 +23,8 @@ on GPU cloud platforms.
 - 🎨 Pre-configured ComfyUI installation (accessible on port 3000)
 - 📂 Web-based file browser (accessible on port 4040)
 - 🤖 Pre-installed model categories:
-  - Base models (JuggernautXL, Flux1)
-  - IP-Adapters (SDXL & SD1.5 variants)
+  - Base models (JuggernautXL)
+  - IP-Adapters (SDXL)
   - ControlNet models
   - Face detection models
   - Upscalers
@@ -54,7 +54,7 @@ To run the environment locally:
 
 ```bash
 # Pull the image
-docker pull ghcr.io/joyandmighty/consistent-character:latest
+docker pull ghcr.io/abhijitsinghas/comfyui-consistent-character:latest
 
 # Run the container
 docker run -it --gpus all \
@@ -64,7 +64,7 @@ docker run -it --gpus all \
   -v /path/to/your/inputs:/workspace/input \
   -v /path/to/your/outputs:/workspace/output \
   -v /path/to/your/models:/workspace/models \
-  ghcr.io/joyandmighty/consistent-character:latest
+  ghcr.io/abhijitsinghas/comfyui-consistent-character:latest
 
 # Access ComfyUI at http://localhost:3000
 # Access file browser at http://localhost:4040
@@ -79,7 +79,7 @@ models directories.
 The Docker image is available on GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/joyandmighty/consistent-character:latest
+docker pull ghcr.io/abhijitsinghas/comfyui-consistent-character:latest
 ```
 
 Available tags:
@@ -91,7 +91,7 @@ Available tags:
 You can also reference the image directly in your cloud platform template:
 
 ```
-ghcr.io/joyandmighty/consistent-character:latest
+ghcr.io/abhijitsinghas/comfyui-consistent-character:latest
 ```
 
 Each release is automatically built and published using GitHub Actions. The
@@ -102,7 +102,7 @@ version number is managed through semantic versioning based on commit messages.
 To build the Docker image locally:
 
 ```bash
-docker build -t consistent-character .
+docker build -t comfyui-consistent-character .
 ```
 
 ## License

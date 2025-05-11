@@ -36,6 +36,8 @@ REPOS=(
     "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet"
     "https://github.com/Derfuu/Derfuu_ComfyUI_ModdedNodes"
     "https://github.com/city96/ComfyUI-GGUF"
+    "https://github.com/ltdrdata/ComfyUI-Inspire-Pack"
+    "https://github.com/melMass/comfy_mtb"
 )
 
 # Function to install requirements if they exist
