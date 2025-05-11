@@ -54,10 +54,20 @@ download_model \
     "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16" \
     "$WORKSPACE_PATH/checkpoints/juggernautXL_juggXIByRundiffusion.safetensors"
 
-# Photon model
+# RealVisXl Model
 download_model \
-    "https://civitai.com/api/download/models/90072?type=Model&format=SafeTensor&size=pruned&fp=fp16" \
-    "$WORKSPACE_PATH/checkpoints/photon_v1.safetensors"
+    "https://huggingface.co/SG161222/RealVisXL_V5.0_Lightning/resolve/main/RealVisXL_V5.0_Lightning_fp16.safetensors" \
+    "$WORKSPACE_PATH/checkpoints/realvisxlV50_v40LightningBakedvae.safetensors"
+
+# WindCardX-Turbo
+download_model \
+    "https://civitai.com/api/download/models/329685?type=Model&format=SafeTensor&size=full&fp=fp16&token=${CIVITAI_TOKEN}" \
+    "$WORKSPACE_PATH/checkpoints/wildcardx-xl-turbo.safetensors" 
+
+# # Photon model
+# download_model \
+#     "https://civitai.com/api/download/models/90072?type=Model&format=SafeTensor&size=pruned&fp=fp16" \
+#     "$WORKSPACE_PATH/checkpoints/photon_v1.safetensors"
 
 # UltraSharp upscaler
 download_model \
@@ -86,50 +96,47 @@ download_model \
     "$WORKSPACE_PATH/diffusion_models/IC-Light/iclight_sd15_fbc.safetensors"
 
 # CLIP Vision Models for IP-Adapter
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors" \
-    "$WORKSPACE_PATH/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/image_encoder/model.safetensors" \
+#     "$WORKSPACE_PATH/clip_vision/CLIP-ViT-H-14-laion2B-s32B-b79K.safetensors"
 
 download_model \
     "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/image_encoder/model.safetensors" \
     "$WORKSPACE_PATH/clip_vision/CLIP-ViT-bigG-14-laion2B-39B-b160k.safetensors"
 
 # IP-Adapter Models
-download_model \
-    "https://huggingface.co/TheMistoAI/MistoLine/resolve/main/mistoLine_rank256.safetensors?download=true" \
-    "$WORKSPACE_PATH/controlnet/mistoLine_rank256.safetensors"
+# download_model \
+#     "https://huggingface.co/TheMistoAI/MistoLine/resolve/main/mistoLine_rank256.safetensors?download=true" \
+#     "$WORKSPACE_PATH/controlnet/mistoLine_rank256.safetensors"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter_sd15.safetensors"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15.safetensors" \
+#     "$WORKSPACE_PATH/ipadapter/ip-adapter_sd15.safetensors"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter_sd15_light_v11.bin"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_light_v11.bin" \
+#     "$WORKSPACE_PATH/ipadapter/ip-adapter_sd15_light_v11.bin"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter-plus_sd15.safetensors"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus_sd15.safetensors" \
+#     "$WORKSPACE_PATH/ipadapter/ip-adapter-plus_sd15.safetensors"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter-plus-face_sd15.safetensors"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-plus-face_sd15.safetensors" \
+#     "$WORKSPACE_PATH/ipadapter/ip-adapter-plus-face_sd15.safetensors"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter-full-face_sd15.safetensors"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter-full-face_sd15.safetensors" \
+#     "$WORKSPACE_PATH/ipadapter/ip-adapter-full-face_sd15.safetensors"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter_sd15_vit-G.safetensors"
+# download_model \
+#     "https://huggingface.co/h94/IP-Adapter/resolve/main/models/ip-adapter_sd15_vit-G.safetensors" \
+#     "$WORKSPACE_PATH/ipadapter/ip-adapter_sd15_vit-G.safetensors"
 
-download_model \
-    "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip-adapter_sdxl.safetensors"
 
-download_model \
-    "https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors" \
-    "$WORKSPACE_PATH/ipadapter/ip_plus_composition_sd15.safetensors"
+# download_model \
+#     "https://huggingface.co/ostris/ip-composition-adapter/resolve/main/ip_plus_composition_sd15.safetensors" \
+#     "$WORKSPACE_PATH/ipadapter/ip_plus_composition_sd15.safetensors"
 
 download_model \
     "https://huggingface.co/Kwai-Kolors/Kolors-IP-Adapter-Plus/resolve/main/ip_adapter_plus_general.bin" \
@@ -145,6 +152,10 @@ download_model \
     "$WORKSPACE_PATH/ultralytics/bbox/face_yolov8m.pt"
 
 # SDXL IP-Adapter ViT-H Models
+download_model \
+    "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter_sdxl.safetensors" \
+    "$WORKSPACE_PATH/ipadapter/ip-adapter_sdxl.safetensors"
+
 download_model \
     "https://huggingface.co/h94/IP-Adapter/resolve/main/sdxl_models/ip-adapter-plus-face_sdxl_vit-h.safetensors" \
     "$WORKSPACE_PATH/ipadapter/ip-adapter-plus-face_sdxl_vit-h.safetensors"
@@ -166,16 +177,16 @@ download_model \
     "https://huggingface.co/huchenlei/ipadapter_pulid/resolve/main/ip-adapter_pulid_sdxl_fp16.safetensors?download=true" \
     "$WORKSPACE_PATH/pulid/ip-adapter_pulid_sdxl_fp_16.safetensors"
 
-# Flux1 model
-download_model \
-    "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors" \
-    "$WORKSPACE_PATH/checkpoints/flux1-dev-fp8.safetensors"
-download_model \
-    "https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors" \
-    "$WORKSPACE_PATH/controlnet/FLUX.1/InstantX-FLUX1-Dev-Union/diffusion_pytorch_model.safetensors"
-download_model \
-    "https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.1.safetensors" \
-    "$WORKSPACE_PATH/pulid/pulid_flux_v0.9.1.safetensors"
+# # Flux1 model
+# download_model \
+#     "https://huggingface.co/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors" \
+#     "$WORKSPACE_PATH/checkpoints/flux1-dev-fp8.safetensors"
+# download_model \
+#     "https://huggingface.co/InstantX/FLUX.1-dev-Controlnet-Union/resolve/main/diffusion_pytorch_model.safetensors" \
+#     "$WORKSPACE_PATH/controlnet/FLUX.1/InstantX-FLUX1-Dev-Union/diffusion_pytorch_model.safetensors"
+# download_model \
+#     "https://huggingface.co/guozinan/PuLID/resolve/main/pulid_flux_v0.9.1.safetensors" \
+#     "$WORKSPACE_PATH/pulid/pulid_flux_v0.9.1.safetensors"
 
 # InstantID Antelopev2 models
 download_model \
